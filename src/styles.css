@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+app-tic-tac-toe .flex-box {
+  margin-top: 0ch;
+  margin-left: 0ch;
+  margin-right: 0ch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+app-tic-tac-toe .container-box {
+  background-color: black;
+  height: 600px;
+}
+
+app-tic-tac-toe .content-box {
+  background-color: yellowgreen;
+  color: blue;
+  text-align: center;
+  width: 250px;
+}
+
+app-tic-tac-toe table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+app-tic-tac-toe td {
+  border: 2px solid black;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  vertical-align: middle;
+}

@@ -1,0 +1,29 @@
+<div class="flex-box container-box">
+  <div class="content-box">
+    <img src="/assets/img/200px-Tic_Tac_Toe.png" />
+    <p></p>
+    <h1>Jogo Da Velha V.1.0</h1>
+    <p></p>
+    <p>Jogador Atual: {{ currentPlayer }}</p>
+    <p>Vencedor: {{ winner }}</p>
+    <p><button (click)="reset()">Reiniciar a Partida</button></p>
+    <table align="center">
+      <tr>
+        <td (click)="processPlay(0, 0)">{{ board[0][0] }}</td>
+        <td (click)="processPlay(0, 1)">{{ board[0][1] }}</td>
+        <td (click)="processPlay(0, 2)">{{ board[0][2] }}</td>
+      </tr>
+      <tr>
+        <td (click)="processPlay(1, 0)">{{ board[1][0] }}</td>
+        <td (click)="processPlay(1, 1)">{{ board[1][1] }}</td>
+        <td (click)="processPlay(1, 2)">{{ board[1][2] }}</td>
+      </tr>
+      <tr>
+        <td (click)="processPlay(2, 0)">{{ board[2][0] }}</td>
+        <td (click)="processPlay(2, 1)">{{ board[2][1] }}</td>
+        <td (click)="processPlay(2, 2)">{{ board[2][2] }}</td>
+      </tr>
+    </table>
+    <p></p>
+  </div>
+</div>
